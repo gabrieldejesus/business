@@ -1,4 +1,4 @@
-#### 📒  _Always learn_
+#### 📒  _Always learn_
 
 # Landing page: Business
 > Project created in order to exercise my knowledge in HTML5 and CSS3.
