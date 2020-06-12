@@ -1,0 +1,995 @@
+* {
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+body {
+    margin:0;
+    padding:0;
+}
+/*=====================================================TOPO=====================================================*/
+#top {
+    display:flex; /*Ativando o Flexbox*/
+    justify-content:center; /*Alinhando no centro*/
+    height:52px;
+    background-image:url('../images/banner-top.png');
+    background-position:center;
+    background-size:cover;
+}
+.bar-top { /*Barra no final do topo*/
+    height:1px;
+    background-image:url('../images/bar-bottom.png');
+    background-position:center;
+    background-repeat:repeat;
+}
+.container-top { /*Container do topo*/
+    display:flex;
+    justify-content:space-between;
+    width:1524px;
+}
+.top-left,
+.top-right { /*Topo da esquerda e da direita*/
+    display:flex;
+    align-items:center;
+}
+.top-left-main,
+.top-right-main {
+    display:flex;
+    align-items:center;
+}
+.top-right-main img { /*Icones de redes sociais*/
+    margin-left:15px;
+}
+.top-right-main-search { /*Botão de pesquisa*/
+    display:flex;
+    align-items:center;
+    margin-left:32px;
+}
+.text {
+    color:#FFF;
+    font-size:13px;
+    margin-left:11px;
+    margin-right:13px;
+}
+/*=====================================================HEADER=====================================================*/
+header {
+    display:flex;
+    justify-content:center;
+    height:100px;
+    background-image:url('../images/banner-header.png');
+    background-position:center;
+    background-size:cover;
+}
+.container { /*Container principal*/
+    display:flex;
+    justify-content:space-between;
+    width:1480px;
+}
+.logo {
+    display:flex;
+    align-items:center;
+}
+.menu {
+    display:flex;
+    align-items:center;
+}
+/*=====================================================MENU=====================================================*/
+nav ul,
+nav li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav ul {
+    display:flex;
+}
+nav a { /*Texto do menu*/
+    display:block;
+    margin-left:36px;
+    color:#F6F6F6;
+    font-size:15px;
+    text-decoration:none;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+nav .active a,
+nav a:hover { /*Menu ativo*/
+    border-bottom:2px solid #2e1dff;
+}
+.purchase a{ /*botão de purchase*/
+    display:block;
+    color:#F6F6F6;
+    font-size:15px;
+    padding:20px 30px;
+    text-decoration:none;
+    margin-left:48px;
+    border-radius:2px;
+    background-color:#2e1dff;
+}
+.menuMobile { /*Menu mobile*/
+    display:none;
+    width:36px;
+    height:40px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.mm-line { /*Linha do menu mobile*/
+    height:3px;
+    border-radius:3px;
+    background-color:#FFF;
+}
+/*=====================================================BANNER=====================================================*/
+#banner {
+    display:flex;
+    justify-content:center;
+    background-image:url('../images/banner.png');
+    background-position:center;
+    background-size:cover;
+    height:862px;
+    margin-bottom:185px;
+}
+.column { /*Conteudo que estiver dentro vai seguir a orientação de coluna*/
+    flex-direction:column;
+    align-items:center;
+}
+.banner-headline {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.banner-headline h1 {
+    margin:0;
+    padding:0;
+    color:#FFFFFD;
+    font-size:26px;
+    font-weight:lighter;
+}
+.banner-headline h2 {
+    margin:0;
+    padding-top:15px;
+    color:#FFFFFD;
+    font-size:84px;
+    font-weight:lighter;
+}
+.banner-options {
+    height:184px;
+    display:flex;
+    justify-content:center;;
+    align-items:center;
+    margin-bottom:194px;
+}
+.banner1,
+.banner2,
+.banner3 {
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    color:#FFF;
+    padding:114px;
+}
+.banner1 a,
+.banner2 a,
+.banner3 a {
+    max-width:74px;
+    padding:20px 24px;
+    border:2px solid #7162fb;
+    border-radius:8px;
+}
+.banner-title {
+    font-size:18px;
+    font-weight:bold;
+    margin-top:30px;
+}
+.banner-desc {
+    max-width:206px;
+    margin-top:15px;
+    color:#d0cccb;
+    font-size:15px;
+    line-height:30px;
+    font-weight:lighter;
+}
+/*=====================================================ABOUT=====================================================*/
+.container-main{ /*Container do about*/
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:1231px;
+}
+#about { /*ID Principal*/
+    display:flex;
+    justify-content:center;
+    margin-bottom:130px;
+}
+#about section { /*Definindo o mesmo tamanho para as sections*/
+    flex:1;
+}
+.widget-title { /*Title do widget*/
+    color:#11110f;
+    font-size:39px;
+    font-weight:lighter;
+    line-height:50px;
+    margin-left:116px;
+    max-width:300px;
+}
+.widget-desc { /*Description do widget*/
+    max-width:285px;
+    margin-top:30px;
+    color:#868887;
+    font-size:15px;
+    line-height:30px;
+    margin-left:116px;
+}
+.widget-thumbnail img{ /*Imagem do widget*/
+    border-radius:8px;
+}
+.widget-options { /*Opções do widget*/
+    display:flex;
+    width:230px;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:116px;
+}
+.widget-options-investors-value,
+.widget-options-projects-value { /*Números das opções do widget*/
+    margin-top:30px;
+    color:#2a17ff;
+    font-size:45px;
+    font-weight:lighter;
+}
+.widget-options-investors-text,
+.widget-options-projects-text { /*Texto das opções do widget*/
+    margin-top:13px;
+    color:#101211;
+    font-size:15px;
+    font-weight:bold;
+}
+.widget-options a { /*Read more*/
+    padding:20px 30px;
+    color:#fff7fd;
+    text-decoration:none;
+    border-radius:4px;
+    background-color:#2e1dff;
+    margin-top:40px;
+}
+/*=====================================================SERVICES=====================================================*/
+#services { /*ID Principal*/
+    display:flex;
+    justify-content:center;
+    margin-bottom:165px;
+}
+.container-services{ /*Container do service*/
+    display:flex;
+    justify-content:space-between;
+    width:1230px;
+}
+.services-title { /*Titulo dos serviços*/
+    display:flex;
+    justify-content:center;
+    margin:0;
+}
+.services-title h2 { /*Titulo 1*/
+    margin:0;
+    padding:0;
+    color:#2b1bf7;
+    font-size:20px;
+    font-weight:lighter;
+}
+.services-title h1 { /*Titulo 2*/
+    margin:0;
+    padding:0;
+    color:#0e1106;
+    font-size:48px;
+    font-weight:lighter;
+}
+.services-body { /* Corpo dos serviços*/
+    display:flex;
+    justify-content:center;
+    margin-top:128px;
+}
+.services-body a {
+    padding:58px;
+    margin-left:15px;
+    margin-right:15px;
+    color:#131114;
+    font-size:20px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:8px;
+    border:2px solid #efeefe;
+}
+.services-one,
+.services-two,
+.services-three,
+.services-four{
+    display:flex;
+}
+.services-body-thumbnail { /*Imagem de serviços*/
+    padding:40px;
+}
+.services-body-desc { /*Descrição de serviçõs*/
+    margin-top:36px;
+    color:#81827c;
+    font-size:15px;
+}
+/*=====================================================VIDEO INTRODUCTION=====================================================*/
+#video-introduction {
+    display:flex;
+    justify-content:center;
+    height:664px;
+    background-image:url("../images/Rectangle-532-copy.jpg");
+    background-position:center;
+    background-size:cover;
+    margin-bottom:173px;
+}
+.container-video-introduction { /*Container do video de introduction*/
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.video-introduction-body { /*Body do video de introduction*/
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.video-introduction-body-play img{ /*Imagem de play*/
+    height:40px;
+}
+.video-introduction-body-title { /*Titulo*/
+    margin-top:54px;
+    max-width:440px;
+    color:#FFF;
+    font-size:48px;
+    font-weight:lighter;
+    text-align:center;
+}
+.video-introduction-body-sub {/*Subtitulo*/
+    margin-top:32px;
+    color:#FFF;
+    font-size:20px;
+    font-weight:lighter;
+}
+/*=====================================================Pricing=====================================================*/
+#pricing {
+    display:flex;
+    justify-content:center;
+    margin-bottom:192px;
+}
+.container-pricing { /*Container do video de introduction*/
+    display:flex;
+    justify-content:space-between;
+    width:1498px;
+}
+.pricing-body { /*Body do pricing*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+.pricing-title {
+    display:Flex;
+    max-width:340px;
+}
+.pricing-title-text { /*Title*/
+    color:#0d1313;
+    font-size:48px;
+    font-weight:lighter;
+    line-height:60px;
+}
+.pricing-title-subtext { /*Subtitulo*/
+    margin-top:46px;
+    color:#767b7f;
+    font-size:15px;
+    font-weight:lighter;
+    line-height:30px;
+}
+.pricing-options{ /*Prcing options*/
+    display:flex;
+    margin-left:169px;
+}
+.pricing-options a {
+    padding:75px;
+    color:#0e0e0e;
+    text-decoration:none;
+    border-radius:8px;
+    background-color:#f7f6fe;
+}
+.pricing-options-title { /*Title do pricing*/
+    color:#0e0e0e;
+    font-size:24px;
+    font-weight:bold;
+}
+.pricing-options-value { /*Value do pricing*/
+    margin-top:20px;
+    color:#2e1cff;
+    font-size:58px;
+}
+.pricing-options-desc { /*Description do pricing*/
+    margin-top:28px;
+    color:#aaacb9;
+    font-size:14px;
+    max-width:334px;
+    line-height:22px;
+}
+.pricing-options-bar { /*Barra em baixo da description*/
+    margin-top:29px;
+    height:1px;
+    background-color:#e5dfff;
+}
+.pricing-options-benefits { /*Benefits*/
+    margin-top:41px;
+    color:#09080d;
+    font-size:16px;
+    font-weight:lighter;
+}
+ul { /*Lista dos beneficios*/
+    padding:0;
+    margin:0;
+    line-height:40px;
+    list-style:none;
+    margin-bottom:48px;
+}
+button { /*Button*/
+    width:174px;
+    height:60px;
+    color:#09080d;
+    font-size:14px;
+    border-radius:4px;
+    border:2px solid #2b1fff;
+    background-color:#f7f6fe;
+}
+.pricing-options .active{ /*Pricing ativo como estratégia de marketing*/
+    margin-left:25px;
+    border-radius:8px;
+    background-color:#FFF;
+    border:2px solid #2e1dff;
+}
+.pricing-options .active button { /*Button ativo*/
+    color:#FFF;
+    background-color:#2e1dff;
+}
+/*=====================================================CONTACT=====================================================*/
+#contact {
+    display:flex;
+    justify-content:center;
+    height:638px;
+    background-image:url("../images/Rectangle-534-copy.jpg");
+    background-position:center;
+    background-size:cover;
+}
+.container-contact { /*Container do contact*/
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.contact-body{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.contact-body-title { /*Titulo*/
+    max-width:258px;
+    color:#bbaeff;
+    font-size:19px;
+    font-weight:lighter;
+}
+.contact-body-sub { /*Subtitulo*/
+    margin-top:20px;
+    max-width:708px;
+    color:#fffcff;
+    font-size:47px;
+    font-weight:lighter;
+    text-align:center;
+}
+.contact-body-buttom {
+    margin-top:62px;
+}
+.contact-body-buttom a{ /*Botão para contanto*/
+    display:flex;
+    align-items:center;
+    padding:22px 35px;
+    color:#fffaff;
+    font-size:16px;
+    border-radius:4px;
+    border:2px solid #695ffe;
+    text-decoration:none;
+}
+.contact-body img { /*Phone do contact*/
+    margin-right:14px;
+}
+/*=====================================================FOOTER=====================================================*/
+footer {
+    display:flex;
+    justify-content:center;
+    background-color:#111111;
+}
+.flexColumn { /*Mudando a orientação do footer para column*/
+    flex-direction:column;
+}
+.container-footer {/*Container do footer*/
+    display:flex;
+    justify-content:space-between;
+    width:1170px;
+}
+.footer-menu { /*área para menus*/
+    display:flex;
+}
+.ft-1 {
+    flex:2; /*Área do menu com logo, texto e redes sociais*/
+}
+.ft-2,
+.ft-3,
+.ft-4 { /*3 áreas do menu*/
+    flex:1;
+    padding-left:125px;
+    padding-left:125px;
+}
+.footer-logo { /*Imagem de logo do site*/
+    margin-top:108px;
+    margin-bottom:30px;
+}
+.footer-text { /*Texto*/
+    max-width:244px;
+    color:#eaf0ec;
+    font-size:14px;
+    line-height:26px;
+    margin-bottom:42px;
+}
+.footer-social img{ /*Icones de redes sociais*/
+    margin-right:25px;
+}
+.footer-title { /*Titulos*/
+    color:#fcfdff;
+    font-size:15px;
+    margin-top:111px;
+    margin-bottom:30px;
+}
+.footer-list { /*Lista de links do footer*/
+    margin:0;
+    padding:0;
+}
+.footer-list a{
+    color:#6d696a;
+    text-decoration:none;
+}
+.footer-list a:hover {
+    color:#CCC;
+    text-shadow:0px 0px #000;
+}
+/*Footer bar*/
+.footer-bar {
+    width:100%;
+    height:1px;
+    margin-top:36px;
+    background-color:#252525;
+}
+/*Footer copy and menu*/
+.footer-copy {
+    display:flex;
+    justify-content:space-between;
+    margin-top:55px;
+    margin-bottom:64px;
+}
+.footer-copy-text { /*Texto do copyright*/
+    color:#636969;
+    font-size:12px;
+}
+.footer-copy-menu a { /*Menu da área do copy*/
+    margin-left:24px;
+    color:#fffdff;
+    font-size:14px;
+    text-decoration:none;
+}
+
+/*=====================================================RESPONSIVIDADE=====================================================*/
+@media (max-width:1524px) {
+/*==========HEADER==========*/
+    .top-left {
+        margin-left:30px;
+    }
+    .top-right {
+        margin-right:30px;
+    }
+    .banner-headline h1 {
+        font-size:22px;
+    }
+    .banner-headline h2 {
+        font-size:70px;
+    }
+/*==========PRICING==========*/
+    .pricing-title-text {
+        font-size:40px;
+        margin-left:30px;
+    }
+    .pricing-title-subtext {
+        font-size:14px;
+        margin-left:30px;
+    }
+    .pricing-options a {
+        padding:60px;
+    }
+    .pricing-options-title {
+        font-size:20px;
+    }
+    .pricing-options-value {
+        font-size:50px;
+    }
+    .pricing-options-desc {
+        font-size:12px;
+    }
+    .pricing-options-benefits {
+        font-size:15px;
+    }
+    button {
+        width:160px;
+    }
+}
+/*=====================================================1490px=====================================================*/
+@media (max-width:1490px) {
+/*==========HEADER==========*/
+    .logo {
+        margin-left:30px;
+    }
+    .menu {
+        margin-right:30px;
+    }
+    .pricing-options .active {
+        margin-right:30px;
+    }
+}
+/*=====================================================1200px=====================================================*/
+@media (max-width:1200px) {
+    .banner-title {
+        font-size:15px;
+    }
+    .banner-desc {
+        font-size:13px;
+    }
+/*==========PRICING==========*/
+    .pricing-options a {
+        padding:40px;
+    }
+/*==========FOOTER==========*/
+    .footer-menu {
+        margin-left:30px;
+        margin-right:30px;
+    }
+    .footer-copy-text {
+        margin-left:30px;
+    }
+    .footer-copy-menu {
+        margin-right:30px;
+    }
+}
+/*=====================================================1112px=====================================================*/
+@media (max-width:1112px) {
+/*==========BANNER==========*/
+    .banner-headline {
+        margin-top:120px;
+    }
+    .banner-headline h1 {
+        font-size:18px;
+    }
+    .banner-headline h2 {
+        font-size:50px;
+    }
+    .banner-options {
+        height:auto;
+        flex-direction:column;
+        margin-bottom:0px;
+    }
+    .banner1, .banner2, .banner3 {
+        padding:10px;
+        align-items:center;
+    }
+    .banner1 a, .banner2 a, .banner3 a {
+        padding:10px 14px;
+    }
+    .banner-desc {
+        margin-top:5px;
+        max-width:none;
+    }
+/*==========ABOUT==========*/
+    .container-main {
+        flex-direction:column;
+    }
+    .widget-title {
+        max-width:none;
+        margin-left:0px;
+        text-align:center;
+    }
+    .widget-desc {
+        max-width:none;
+        text-align:center;
+        margin-left:30px;
+        margin-right:30px;
+    }
+    .widget-options {
+        width:100%;
+        justify-content:center;
+        margin-left:0px;
+    }
+    .widget-options-investors {
+        margin-right:15px;
+    }
+    .widget-options-projects {
+        margin-left:15px;
+    }
+    .widget-thumbnail img {
+        width:320px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+/*==========SERVICES==========*/
+    .services-body {
+        flex-direction:column;
+    }
+    .services-body a {
+        margin:0px;
+        padding:26px;
+        margin-bottom:30px;
+    }
+/*==========PRICING==========*/
+    .container-pricing {
+        justify-content:center;
+    }
+    .pricing-body {
+        flex-direction:column;
+    }
+    .pricing-title {
+        max-width:none;
+    }
+    .pricing-title-text,
+    .pricing-title-subtext {
+        margin-left:0px;
+    }
+    .pricing-options {
+        margin-top:30px;
+        margin-left:0px;
+    }
+    .pricing-options a {
+        padding:25px;
+    }
+    .pricing-options .active {
+        margin-right:0px;
+    }
+/*==========CONTACT==========*/
+    .contact-body-title {
+        font-size:16px;
+    }
+    .contact-body-sub {
+        font-size:30px;
+    }
+    .contact-body-buttom a {
+        padding: 16px 30px;
+    }
+    .ft-2, .ft-3, .ft-4 {
+        padding:0px;
+    }
+}
+/*=====================================================900px=====================================================*/
+@media (max-width:900px) {
+/*==========HEADER==========*/
+    nav a {
+        font-size:14px;
+        margin-left:20px;
+    }
+    .purchase a {
+        font-size:14px;
+        margin-left:30px;
+    }
+/*==========BANNER==========*/
+    .banner-headline {
+        margin-top:30px;
+    }
+/*==========PRICING==========*/
+    .pricing-title-text {
+        font-size:34px;
+    }
+    .pricing-title-subtext {
+        margin-top:20px;
+    }
+/*==========VIDEO INTRODUCTION==========*/
+    #video-introduction {
+        height:500px;
+    }
+    .video-introduction-body-title {
+        margin-top:30px;
+        font-size:38px;
+    }
+    .video-introduction-body-sub {
+        margin-top:20px;
+        font-size:15px;
+    }
+/*==========FOOTER==========*/
+    .ft-1 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-bottom:100px;
+    }
+    .ft-2, .ft-3, .ft-4 {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .footer-menu {
+        flex-direction:column;
+        align-items:center;
+    }
+    .footer-text {
+        max-width:none;
+    }
+    .footer-social img {
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .footer-title {
+        margin-top:0px;
+        margin-bottom:15px;
+    }
+    .footer-list ul {
+        display:flex;
+    }
+    .footer-list a {
+        padding:20px;
+    }
+    .footer-copy {
+        flex-direction:column;
+        align-items:center;
+    }
+    .footer-copy-menu {
+        margin-right:0px;
+        margin-top:20px;
+    }
+}
+/*=====================================================700px=====================================================*/
+@media (max-width:700px) {
+/*==========TOPO==========*/
+    #top {
+        display:none;
+    }
+/*==========MENU==========*/
+    nav ul {
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        left:0;
+        width:100%;
+        background-color:#FFF;
+    }
+    nav a {
+        color:#111;
+    }
+    nav .active a, nav a:hover {
+        color:#111;
+    }
+    .purchase a {
+        display:none;
+    }
+    .menuMobile {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+    }
+/*==========HEADER==========*/
+    header {
+        height:auto;
+    }
+/*==========BANNER==========*/
+    .banner-headline {
+        margin-top:0px;
+    }
+    .banner-headline h1 {
+        font-size:16px;
+        text-align:center;
+    }
+    .banner-headline h2 {
+        font-size:40px;
+        text-align:center;
+    }
+    .banner1, .banner2, .banner3 {
+        padding:5px;
+    }
+/*==========ABOUT===========*/
+    .widget-title {
+        font-size:34px;
+    }
+    .widget-desc {
+        font-size:14px;
+    }
+    .widget-options-investors-value, .widget-options-projects-value {
+        font-size:40px;
+    }
+/*==========SERVICES===========*/
+    .services-title h2 {
+        font-size:16px;
+    }
+    .services-title h1 {
+        font-size:40px;
+    }
+    .services-title h2 {
+        font-size:15px;
+    }
+    .services-title h1 {
+        font-size:26px;
+    }
+    .services-body a {
+        margin-left:20px;
+        margin-right:20px;
+    }
+/*==========VIDEO INTRODUCTION===========*/
+    .video-introduction-body-title {
+        font-size:32px;
+    }
+    .video-introduction-body-sub {
+        font-size:13px;
+    }
+/*==========PRICING===========*/
+    .pricing-options {
+        flex-direction:column;
+    }
+    .pricing-title-text {
+        font-size:32px;
+        text-align:center;
+    }
+    .pricing-title-subtext {
+        font-size:14px;
+        text-align:center;
+    }
+    .pricing-options a {
+        padding:20px;
+        margin-top:30px;
+    }
+    .pricing-options .active {
+        margin-left:0px;
+    }
+    button {
+        width:150px;
+        font-size:14px;
+    }
+/*==========CONTACT===========*/
+    .contact-body-title {
+        font-size:15px;
+    }
+    .contact-body-sub {
+        font-size:26px;
+    }
+    .contact-body-buttom a {
+        padding:14px 24px;
+    }
+/*==========FOOTER===========*/
+    .footer-list a {
+        font-size:14px;
+    }
+}
+/*=====================================================500px=====================================================*/
+@media (max-width:500px) {
+/*==========PRICING===========*/
+    .pricing-options a {
+        margin-left:15px;
+        margin-right:15px;
+    }
+    .pricing-options .active {
+        margin-left:10px;
+        margin-right:10px;
+    }
+/*==========FOOTER===========*/
+    .footer-text {
+        margin-left:20px;
+        margin-right:20px;
+        text-align:center;
+    }
+    .footer-list a {
+        font-size:13px;
+        padding:6px;
+    }
+    .footer-bar {
+        max-width:360px;
+    }
+    .footer-copy-menu a {
+        margin-left:10px;
+    }
+}
