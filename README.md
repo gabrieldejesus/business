@@ -4,9 +4,6 @@
 > Project created in order to exercise my knowledge in HTML5 and CSS3.
 
 
-![](public/assets/social-preview-atitude.png)
-
-
 ## Inspiration
 
 https://jevelin.shufflehound.com/business
