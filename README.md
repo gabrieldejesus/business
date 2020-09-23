@@ -1,6 +1,7 @@
 #### 📒   _Always learn_
 
-> Landing page: Business
+# Business
+
 Project created in order to exercise my knowledge in HTML5 and CSS3.
 
 `Web preview`
